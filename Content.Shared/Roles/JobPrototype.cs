@@ -137,6 +137,9 @@ namespace Content.Shared.Roles
 
         [DataField("special", serverOnly: true)]
         public JobSpecial[] Special { get; private set; } = Array.Empty<JobSpecial>();
+        //_RMC14
+        [DataField]
+        public readonly string? SpawnMenuRoleName;
 
         [DataField("access")]
         public IReadOnlyCollection<ProtoId<AccessLevelPrototype>> Access { get; private set; } = Array.Empty<ProtoId<AccessLevelPrototype>>();
